@@ -4,6 +4,7 @@ using namespace std;
 int itc_min_num(long long number) {
     int min,a;
     min=9;
+    number= itc_abs(number);
     while(number != 0){
         a = number%10;
         if(a<=min)
@@ -16,6 +17,7 @@ int itc_min_num(long long number) {
 }
 int itc_null_count(long long number){
     int nul=0,i;
+    number= itc_abs(number);
     while (number!=0){
         i= number%10;
         if(i==0){
