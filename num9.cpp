@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../middle.h"
+#include "middle.h"
 using namespace std;
 long long itc_oct_num(long long number){
     int rem, i = 1, a = 0;
