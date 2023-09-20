@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../middle.h"
+#include "middle.h"
 using namespace std;
 bool is_palindrome(long long number) {
     long long reversed_number = 0;
