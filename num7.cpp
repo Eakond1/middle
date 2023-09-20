@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../middle.h"
+#include "middle.h"
 using namespace std;
 long long itc_bin_num(long long number){
     int binaryNum[32];
