@@ -18,5 +18,5 @@ double itc_pow(int num, int step);
 int itc_rev_oct_num(long long number);
 long long itc_oct_num(long long number);
 int itc_rev_bin_num(long long number);
-
+int itc_abs(int num);
 #endif // MIDDLE_H_INCLUDED
