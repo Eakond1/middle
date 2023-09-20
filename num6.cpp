@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../middle.h"
+#include "middle.h"
 using namespace std;
 
 int itc_rev_num(long long number){
