@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../middle.h"
+#include "middle.h"
 using namespace std;
 double itc_pow(int num, int step){
     double a = num;
