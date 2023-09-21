@@ -1,24 +1,23 @@
 #include <iostream>
-#include "middle.h"
+#include "../middle.h"
 using namespace std;
 int itc_min_num(long long number) {
     int min,a;
     min=9;
-    number= itc_abs(number);
-    while(number != 0){
+    number = itc_abs(number);
+    while(number >0){
         a = number%10;
-        if(a<=min)
+        if(a<min)
             min=a;
-        else
-            min=min;
         number=number/10;
     }
     return min;
 }
 int itc_null_count(long long number){
     int nul=0,i;
+
     number= itc_abs(number);
-    while (number!=0){
+    while (number > 0){
         i= number%10;
         if(i==0){
             nul++;

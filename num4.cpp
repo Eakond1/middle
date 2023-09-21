@@ -1,5 +1,5 @@
 #include <iostream>
-#include "middle.h"
+#include "../middle.h"
 using namespace std;
 
 int itc_second_max_num(long long number) {
@@ -10,7 +10,7 @@ int itc_second_max_num(long long number) {
     int max = -1;
     int second_max = -1;
     if (number < 0)
-        number = number * (-1);
+        number = number * -1;
         while (number != 0) {
             int digit = number % 10;
 

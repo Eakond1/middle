@@ -1,5 +1,5 @@
 #include <iostream>
-#include "middle.h"
+#include "../middle.h"
 using namespace std;
 void itc_num_print(int number){
     cout<< number;
@@ -30,6 +30,7 @@ return sum;
 }
 long long itc_multi_num(long long number){
     int a,comp=1;
+
     number= itc_abs(number);
     while (number !=0){
         a=number%10;
@@ -43,13 +44,11 @@ int itc_max_num(long long number){
     int max,a;
     max=0;
     number= itc_abs(number);
-    while(number!=0){
+    while(number > 0){
         a=number%10;
-        if(a>=max){
+        if(a>max){
             max=a;
         }
-        else
-            max=max;
         number=number/10;
     }
     return max;
