@@ -23,8 +23,8 @@ int itc_sum_num(long long number){
     number= itc_abs(number);
     while (number!=0){
         a=number%10;
-        number=number/10;
         sum=sum+a;
+        number=number/10;
     }
 return sum;
 }
