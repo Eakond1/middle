@@ -21,10 +21,11 @@ int itc_len_num(long long number){
 int itc_sum_num(long long number){
     int sum=0,a;
     number= itc_abs(number);
+
     while (number!=0){
         a=number%10;
-        sum=sum+a;
         number=number/10;
+        sum=sum+a;
     }
 return sum;
 }
