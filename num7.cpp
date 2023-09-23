@@ -2,12 +2,12 @@
 #include "middle.h"
 using namespace std;
 long long itc_bin_num(long long number){
-    int binary = 0, remainder, product = 1;
-    while (number != 0) {
-        remainder = number  % 2;
-        binary = binary + (remainder * product);
-        number  = number / 2;
-        product *= 10;
+    long long bin=0, j;
+    double a;
+    for(j=0; number>0; j++){
+        a= itc_pow(10,j);
+        bin+=(number%2)*a;
+        number/=2;
     }
-    return binary;
+    return bin;
 }

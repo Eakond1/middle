@@ -7,7 +7,7 @@ int itc_second_max_num(long long number) {
         return -1;
     }
     int max = -1;
-    int second_max = -1;
+    long long second_max = -1;
     if (number < 0) {
         number = number * (-1);
     }
