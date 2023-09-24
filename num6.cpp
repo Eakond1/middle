@@ -3,6 +3,9 @@
 using namespace std;
 int itc_rev_num(long long number){
     long long a = 0;
+    if(number==0){
+        return 1;
+    }
     if(number<0){
         number=number*(-1);
     }
