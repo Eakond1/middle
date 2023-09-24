@@ -7,7 +7,10 @@ int itc_min_num(long long number) {
     if(number<0){
         number=number*(-1);
     }
-    while(number >0){
+    if (number ==0){
+        return 0;
+    }
+    while(number > 0){
         a = number%10;
         if(a<min)
             min=a;
@@ -15,19 +18,19 @@ int itc_min_num(long long number) {
     }
     return min;
 }
-int itc_null_count(long long number){
-    int nul=0,i;
-    if(number<0) {
-    number=number*(-1);
+int itc_null_count(long long number) {
+    if (number < 0) {
+        number = number * (-1);
     }
-        while (number > 0){
-            i= number%10;
-            if(i==0){
-                nul++;
-            }
-            number=number/10;
+    int i = 0;
+    while (number > 0) {
+        int digit = number % 10;
+        if (digit == 0) {
+            i += 1;
         }
-    return nul;
+        number /= 10;
+    }
+    return i;
 }
 bool itc_mirror_num(long long number){
     long long originalNumber = number;

@@ -3,15 +3,15 @@
 using namespace std;
 
 int itc_rev_num(long long number){
-    long long reversed = 0;
+    long long a = 0;
     while (number != 0) {
-        reversed = reversed * 10 + number % 10;
+        a = a * 10 + number % 10;
         number /= 10;
     }
     int count = 0;
-    while(reversed != 0){
+    while(a!= 0){
         count++;
-        reversed /= 10;
+        a /= 10;
     }
     return count;
 }
