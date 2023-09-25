@@ -3,10 +3,7 @@
 using namespace std;
 
 int itc_second_max_num(long long number) {
-    if(number==0){
-        return 0;
-    }
-    else if (number >= -9 && number <= 9) {
+    if (number >= -9 && number <= 9) {
         return -1;
     }
     int max = -1;
