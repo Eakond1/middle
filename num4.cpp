@@ -14,7 +14,7 @@ int itc_second_max_num(long long number) {
     while (number != 0) {
         int digit = number % 10;
 
-        if (digit > max) {
+        if (digit >= max) {
             second_max = max;
             max = digit;
         }
